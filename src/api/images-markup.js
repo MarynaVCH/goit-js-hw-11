@@ -1,8 +1,8 @@
-export function createImagesMarkup(images) {
+export default function createImagesMarkup(images) {
   return images
     .map(
       ({ webformatURL, largeImageURL, tags, likes, views, comments, downloads }) =>
-        `<a class="link" href="${largeImageURL}">
+        `<a class="photo-link" href="${largeImageURL}">
    <div class="photo-card">
   <img class="photo-img" src="${webformatURL}" alt="${tags}" loading="lazy" />
   <div class="info">
